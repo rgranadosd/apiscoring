@@ -12,6 +12,25 @@ This repository is a fork of [InditexTech's API Scoring IDE Plugins](https://git
 1. **WSO2 API Analysis**: Added support for analyzing WSO2 API export ZIP files, making it easier to validate APIs exported from WSO2 API Manager.
 2. **Spider Chart Visualization**: Introduced a new spider/radar chart representation to visualize API scoring metrics, providing a more intuitive way to understand API quality across different dimensions.
 
+### Scoring Visualization Example
+
+Below is an example of the scoring visualization for a WSO2 API:
+
+![API Scoring Overview](docs/images/scoring-overview.png)
+
+The spider chart provides a clear view of the API's performance across three key dimensions:
+- Design: 84.29%
+- Security: 76.19%
+- Documentation: Not Applicable (Testing)
+
+### Detailed Analysis
+
+The system provides detailed feedback for each dimension:
+
+![Scoring Details](docs/images/scoring-details.png)
+
+This detailed view helps developers identify and fix specific issues in their API design and implementation.
+
 ## About the Project
 
 The API Scoring Extension is a comprehensive tool suite designed to evaluate and improve the quality of your APIs. It automatically analyzes API specifications against industry best practices, security standards, and documentation requirements, providing detailed feedback and scoring metrics to help developers create better APIs.
