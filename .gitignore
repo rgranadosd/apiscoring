@@ -2,16 +2,26 @@
 node_modules/
 .pnpm-store/
 .npm/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
 
 # Build outputs
 dist/
 build/
 *.vsix
+out/
+lib/
+.webpack/
+.next/
 
 # Environment
 .env
 .env.local
 .env.*.local
+.env.development
+.env.test
+.env.production
 
 # IDE
 .idea/
@@ -19,6 +29,11 @@ build/
 *.sublime-*
 *.swp
 *.swo
+.vs/
+*.iml
+.project
+.classpath
+.settings/
 
 # Logs
 logs/
@@ -26,19 +41,50 @@ logs/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
 
 # Operating System
 .DS_Store
 Thumbs.db
+*.tmp
+*.temp
+desktop.ini
+ehthumbs.db
+$RECYCLE.BIN/
 
 # Testing
 coverage/
 .nyc_output/
+junit.xml
+test-report.xml
+*.lcov
 
 # Temporary files
-*.tmp
-*.temp
 .cache/
+.temp/
+tmp/
+temp/
 
-# Podman
+# Container
 podman-data/
+.podman/
+.docker/
+*.sock
+
+# Project specific
+wso2_extracted/
+api-scoring-engine/.git/
+api-scoring-extension/.git/
+
+# Misc
+.eslintcache
+.stylelintcache
+.tsbuildinfo
+.parcel-cache/
+.vercel
+.now
+.history/
+*.bak
+*.orig
+*.rej
