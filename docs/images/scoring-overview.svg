@@ -1,39 +1,80 @@
 <svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
   <!-- Background -->
-  <rect width="800" height="600" fill="#1a1a1a"/>
+  <rect width="800" height="600" fill="#2d2d2d"/>
   
   <!-- Header -->
-  <text x="40" y="50" fill="#ffffff" font-size="24" font-weight="bold">PizzaShackAPI WSO2</text>
-  <text x="40" y="80" fill="#ff9500" font-size="16">API SCORING - FORKED 1.0.26</text>
-  <text x="40" y="105" fill="#888888" font-size="12">Analysis date: 04/08/2025, 09:12:37</text>
-  <text x="40" y="125" fill="#4CAF50" font-size="14">Adequate</text>
+  <text x="30" y="40" fill="#ffffff" font-size="28" font-weight="bold">PizzaShackAPI</text>
+  <rect x="250" y="20" width="60" height="25" fill="#ff8c00" rx="5"/>
+  <text x="280" y="37" fill="#000000" text-anchor="middle" font-size="14" font-weight="bold">WSO2</text>
   
-  <!-- Spider Chart -->
-  <g transform="translate(400,250)">
-    <!-- Chart background -->
-    <polygon points="0,-80 70,40 -70,40" fill="none" stroke="#444" stroke-width="1"/>
-    <polygon points="0,-60 52.5,30 -52.5,30" fill="none" stroke="#444" stroke-width="1"/>
-    <polygon points="0,-40 35,20 -35,20" fill="none" stroke="#444" stroke-width="1"/>
+  <text x="30" y="70" fill="#ff8c00" font-size="18" font-weight="bold">API SCORING - FORKED 1.0.26</text>
+  <text x="30" y="95" fill="#888888" font-size="14">Analysis date: 04/08/2025, 09:12:37</text>
+  <text x="30" y="120" fill="#4CAF50" font-size="16" font-weight="bold">Adequate</text>
+  
+  <!-- Spider Chart Container -->
+  <g transform="translate(400,280)">
+    <!-- Grid lines (hexagonal) -->
+    <g stroke="#555" stroke-width="1" fill="none">
+      <!-- Outer hexagon -->
+      <polygon points="0,-100 86.6,-50 86.6,50 0,100 -86.6,50 -86.6,-50"/>
+      <!-- Middle hexagon -->
+      <polygon points="0,-70 60.6,-35 60.6,35 0,70 -60.6,35 -60.6,-35"/>
+      <!-- Inner hexagon -->
+      <polygon points="0,-40 34.6,-20 34.6,20 0,40 -34.6,20 -34.6,-20"/>
+      
+      <!-- Radial lines -->
+      <line x1="0" y1="0" x2="0" y2="-100"/>
+      <line x1="0" y1="0" x2="86.6" y2="-50"/>
+      <line x1="0" y1="0" x2="86.6" y2="50"/>
+      <line x1="0" y1="0" x2="0" y2="100"/>
+      <line x1="0" y1="0" x2="-86.6" y2="50"/>
+      <line x1="0" y1="0" x2="-86.6" y2="-50"/>
+    </g>
     
-    <!-- Data visualization -->
-    <polygon points="0,-65 45,25 -45,25" fill="#ff9500" fill-opacity="0.3" stroke="#ff9500" stroke-width="2"/>
+    <!-- Data visualization (aproximate values from the image) -->
+    <polygon points="0,-15 50,25 -50,25" 
+             fill="#ff8c00" 
+             fill-opacity="0.4" 
+             stroke="#ff8c00" 
+             stroke-width="3"/>
+    
+    <!-- Data points -->
+    <circle cx="0" cy="-15" r="4" fill="#ff8c00"/>
+    <circle cx="50" cy="25" r="4" fill="#ff8c00"/>
+    <circle cx="-50" cy="25" r="4" fill="#ff8c00"/>
     
     <!-- Labels -->
-    <text x="0" y="-95" fill="#ffffff" text-anchor="middle" font-size="12">Documentación</text>
-    <text x="85" y="55" fill="#ffffff" text-anchor="middle" font-size="12">Diseño</text>
-    <text x="-85" y="55" fill="#ffffff" text-anchor="middle" font-size="12">Seguridad</text>
+    <text x="0" y="-120" fill="#ffffff" text-anchor="middle" font-size="16" font-weight="bold">Documentación</text>
+    <text x="105" y="-40" fill="#ffffff" text-anchor="start" font-size="16" font-weight="bold">Diseño</text>
+    <text x="-105" y="-40" fill="#ffffff" text-anchor="end" font-size="16" font-weight="bold">Seguridad</text>
   </g>
   
   <!-- Scoring sections -->
-  <rect x="40" y="350" width="720" height="60" fill="#2a2a2a" stroke="#ff9500" stroke-width="1" rx="5"/>
-  <text x="60" y="375" fill="#ff9500" font-size="16" font-weight="bold">DESIGN: 84.29%</text>
-  <text x="60" y="395" fill="#4CAF50" font-size="12">Good</text>
+  <!-- Design Section -->
+  <rect x="30" y="420" width="740" height="50" fill="#3a3a3a" stroke="#ff8c00" stroke-width="1" rx="5"/>
+  <text x="50" y="445" fill="#ff8c00" font-size="18" font-weight="bold">DESIGN: 84.29%</text>
+  <polygon points="750,430 760,445 750,460" fill="#ff8c00"/>
+  <text x="50" y="465" fill="#4CAF50" font-size="14">Good</text>
   
-  <rect x="40" y="420" width="720" height="60" fill="#2a2a2a" stroke="#ff9500" stroke-width="1" rx="5"/>
-  <text x="60" y="445" fill="#ff9500" font-size="16" font-weight="bold">SECURITY: 76.19%</text>
-  <text x="60" y="465" fill="#4CAF50" font-size="12">Good</text>
+  <!-- Issues preview -->
+  <g transform="translate(70, 445)">
+    <circle cx="0" cy="0" r="3" fill="#ffcc00"/>
+    <text x="10" y="4" fill="#ffffff" font-size="12">415 is not a well-understood HTTP status code</text>
+    <circle cx="0" cy="15" r="3" fill="#ffcc00"/>
+    <text x="10" y="19" fill="#ffffff" font-size="12">Missing the post.summary</text>
+    <circle cx="0" cy="30" r="3" fill="#ffcc00"/>
+    <text x="10" y="34" fill="#ffffff" font-size="12">Missing the responses[401] http definition</text>
+  </g>
   
-  <rect x="40" y="490" width="720" height="60" fill="#2a2a2a" stroke="#ff9500" stroke-width="1" rx="5"/>
-  <text x="60" y="515" fill="#ff9500" font-size="16" font-weight="bold">DOCUMENTATION: 0.00%</text>
-  <text x="60" y="535" fill="#888888" font-size="12">Not Applicable (Testing)</text>
+  <!-- Security Section -->
+  <rect x="30" y="490" width="740" height="50" fill="#3a3a3a" stroke="#ff8c00" stroke-width="1" rx="5"/>
+  <text x="50" y="515" fill="#ff8c00" font-size="18" font-weight="bold">SECURITY: 76.19%</text>
+  <polygon points="750,500 760,515 750,530" fill="#ff8c00"/>
+  <text x="50" y="535" fill="#4CAF50" font-size="14">Good</text>
+  
+  <!-- Documentation Section -->
+  <rect x="30" y="560" width="740" height="30" fill="#3a3a3a" stroke="#ff8c00" stroke-width="1" rx="5"/>
+  <text x="50" y="580" fill="#ff8c00" font-size="18" font-weight="bold">DOCUMENTATION: 0.00%</text>
+  <polygon points="750,565 760,575 750,585" fill="#ff8c00"/>
+  <text x="600" y="580" fill="#888888" font-size="14">Not Applicable (Testing)</text>
 </svg>
