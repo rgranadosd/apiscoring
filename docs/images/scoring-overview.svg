@@ -1,0 +1,39 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#1a1a1a"/>
+  
+  <!-- Header -->
+  <text x="40" y="50" fill="#ffffff" font-size="24" font-weight="bold">PizzaShackAPI WSO2</text>
+  <text x="40" y="80" fill="#ff9500" font-size="16">API SCORING - FORKED 1.0.26</text>
+  <text x="40" y="105" fill="#888888" font-size="12">Analysis date: 04/08/2025, 09:12:37</text>
+  <text x="40" y="125" fill="#4CAF50" font-size="14">Adequate</text>
+  
+  <!-- Spider Chart -->
+  <g transform="translate(400,250)">
+    <!-- Chart background -->
+    <polygon points="0,-80 70,40 -70,40" fill="none" stroke="#444" stroke-width="1"/>
+    <polygon points="0,-60 52.5,30 -52.5,30" fill="none" stroke="#444" stroke-width="1"/>
+    <polygon points="0,-40 35,20 -35,20" fill="none" stroke="#444" stroke-width="1"/>
+    
+    <!-- Data visualization -->
+    <polygon points="0,-65 45,25 -45,25" fill="#ff9500" fill-opacity="0.3" stroke="#ff9500" stroke-width="2"/>
+    
+    <!-- Labels -->
+    <text x="0" y="-95" fill="#ffffff" text-anchor="middle" font-size="12">Documentación</text>
+    <text x="85" y="55" fill="#ffffff" text-anchor="middle" font-size="12">Diseño</text>
+    <text x="-85" y="55" fill="#ffffff" text-anchor="middle" font-size="12">Seguridad</text>
+  </g>
+  
+  <!-- Scoring sections -->
+  <rect x="40" y="350" width="720" height="60" fill="#2a2a2a" stroke="#ff9500" stroke-width="1" rx="5"/>
+  <text x="60" y="375" fill="#ff9500" font-size="16" font-weight="bold">DESIGN: 84.29%</text>
+  <text x="60" y="395" fill="#4CAF50" font-size="12">Good</text>
+  
+  <rect x="40" y="420" width="720" height="60" fill="#2a2a2a" stroke="#ff9500" stroke-width="1" rx="5"/>
+  <text x="60" y="445" fill="#ff9500" font-size="16" font-weight="bold">SECURITY: 76.19%</text>
+  <text x="60" y="465" fill="#4CAF50" font-size="12">Good</text>
+  
+  <rect x="40" y="490" width="720" height="60" fill="#2a2a2a" stroke="#ff9500" stroke-width="1" rx="5"/>
+  <text x="60" y="515" fill="#ff9500" font-size="16" font-weight="bold">DOCUMENTATION: 0.00%</text>
+  <text x="60" y="535" fill="#888888" font-size="12">Not Applicable (Testing)</text>
+</svg>
