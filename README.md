@@ -16,7 +16,7 @@ This repository is a fork of [InditexTech's API Scoring IDE Plugins](https://git
 
 Below is an example of the scoring visualization for a WSO2 API:
 
-![API Scoring Overview](docs/images/scoring-overview.svg)
+![API Scoring Overview](docs/images/scoring-overview.png)
 
 The spider chart provides a clear view of the API's performance across three key dimensions:
 - Design: 84.29%
@@ -27,7 +27,7 @@ The spider chart provides a clear view of the API's performance across three key
 
 The system provides detailed feedback for each dimension:
 
-![Scoring Details](docs/images/scoring-details.svg)
+![Scoring Details](docs/images/scoring-details.png)
 
 This detailed view helps developers identify and fix specific issues in their API design and implementation.
 
