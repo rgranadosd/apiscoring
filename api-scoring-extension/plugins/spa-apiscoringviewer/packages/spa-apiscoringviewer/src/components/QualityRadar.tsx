@@ -8,21 +8,17 @@ import {
 } from 'recharts';
 
 /**
- * Visualiza un radar de calidad para Diseño, Seguridad y Documentación.
+ * Displays a quality radar chart for Design, Security and Documentation.
  * @param {{design: number, security: number, documentation: number}} props
  */
 export default function QualityRadar({ design, security, documentation }) {
   const data = [
-    { categoria: 'Diseño',        quality: design },
-    { categoria: 'Seguridad',     quality: security },
-    { categoria: 'Documentación', quality: documentation }
+    { categoria: 'Design',        quality: design },
+    { categoria: 'Security',     quality: security },
+    { categoria: 'Documentation', quality: documentation }
   ];
 
-  console.log('Datos completos recibidos:', {
-    certification: JSON.stringify(certification, null, 2),
-    modulesMetadata: JSON.stringify(modulesMetadata, null, 2),
-    apisRevalidationMetadata: JSON.stringify(apisRevalidationMetadata, null, 2)
-  });
+
 
   return (
     <RadarChart
@@ -38,7 +34,7 @@ export default function QualityRadar({ design, security, documentation }) {
       <PolarRadiusAxis domain={[0, 100]} />
 
       <Radar
-        name="Calidad"
+        name="Quality"
         dataKey="quality"
         stroke="#FFAB00"
         strokeWidth={2}

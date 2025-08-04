@@ -22,7 +22,7 @@ function ServiceChecker() {
     const check = () => {
       fetch('http://localhost:8080/health')
         .then((res) => {
-          if (!res.ok) throw new Error('No disponible');
+          if (!res.ok) throw new Error('Not available');
           if (!cancelled) setShowToast(false);
         })
         .catch(() => {
@@ -55,10 +55,10 @@ function ServiceChecker() {
       fontWeight: '500',
     }}>
       <div style={{ fontWeight: 'bold', marginBottom: '4px' }}>
-        ⚠️ Servicio no disponible
+        ⚠️ Service unavailable
       </div>
       <div style={{ fontSize: '12px', opacity: 0.9 }}>
-        El servicio de certificación no está disponible
+        The certification service is not available
       </div>
       <button
         onClick={() => setShowToast(false)}

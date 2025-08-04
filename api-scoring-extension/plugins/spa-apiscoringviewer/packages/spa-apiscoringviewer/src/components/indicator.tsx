@@ -21,9 +21,9 @@ const IndicatorRadar: React.FC<IndicatorRadarProps> = ({
   documentation,
 }) => {
   const data = [
-    { subject: 'Diseño', A: design, fullMark: 100 },
-    { subject: 'Seguridad', A: security, fullMark: 100 },
-    { subject: 'Documentación', A: documentation, fullMark: 100 },
+    { subject: 'Design', A: design, fullMark: 100 },
+    { subject: 'Security', A: security, fullMark: 100 },
+    { subject: 'Documentation', A: documentation, fullMark: 100 },
   ]
 
   return (

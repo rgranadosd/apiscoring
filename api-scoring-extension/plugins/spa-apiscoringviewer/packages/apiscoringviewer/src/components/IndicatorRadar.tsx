@@ -45,10 +45,10 @@ export default function IndicatorRadar({
   const data = {
     // Ajustar el orden de las etiquetas para corresponder con los puntos estándar del pentágono
     // En un radar de 3 puntos, la primera posición es arriba, luego abajo derecha, abajo izquierda
-    labels: ["Documentación", "Diseño", "Seguridad"],
+    labels: ["Documentation", "Design", "Security"],
     datasets: [
       {
-        label: "Puntuación",
+        label: "Score",
         // Mantener el orden de los datos consistente con las etiquetas
         data: [documentationValue, designValue, securityValue],
         backgroundColor: "rgba(255, 171, 0, 0.3)",
