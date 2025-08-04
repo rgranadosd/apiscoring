@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  api-scoring-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.simple
+    container_name: api-scoring-frontend
+    ports:
+      - "3001:3000"
+    restart: unless-stopped 

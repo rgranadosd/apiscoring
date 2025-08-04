@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  scoring-frontend:
+    build:
+      context: ../..
+      dockerfile: Dockerfile
+      args:
+        - NODE_ENV=production
+    container_name: scoring-frontend
+    ports:
+      - "3001:3001"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    networks:
+      - scoring-network
+
+networks:
+  scoring-network:
+    external: true 

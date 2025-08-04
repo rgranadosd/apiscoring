@@ -1,0 +1,33 @@
+/* Asegúrate de importarlo en certification.tsx: import "./certification.css"; */
+
+.radar-section {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.radar-section h2 {
+  color: #ffffff;        /* Título en blanco */
+  font-size: 1.75rem;    /* Ajusta al tamaño deseado */
+  margin-bottom: 1rem;
+}
+
+.radar-section canvas {
+  max-width: 400px;      /* Limita el ancho */
+  margin: 0 auto;        /* Centra el canvas */
+}
+
+/* Forzar radar a aparecer debajo */
+.radar-container {
+  display: block !important;
+  width: 100% !important;
+  clear: both !important;
+  float: none !important;
+  margin-top: 40px !important; 
+}
+
+/* Estilos para la organización de los tabs y el radar */
+[data-testid="ApiTabs"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+}

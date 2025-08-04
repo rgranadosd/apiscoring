@@ -1,0 +1,30 @@
+.radar-section {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.radar-section h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+
+.radar-section canvas {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.radar-container {
+  clear: both !important;
+  float: none !important;
+  width: 100% !important;
+  margin-top: 40px !important;
+  display: block !important;
+}
+
+[data-testid="ApiTabs"] {
+  width: 100%;
+  margin-bottom: 30px;
+  display: block;
+}
+/*# sourceMappingURL=spa-apiscoringviewer.30f7858e.css.map */

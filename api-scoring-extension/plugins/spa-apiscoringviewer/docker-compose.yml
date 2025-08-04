@@ -1,0 +1,20 @@
+version: '3.8'
+
+networks:
+  scoring-network:
+    external: true
+
+services:
+  api-scoring-frontend:
+    build: .
+    container_name: api-scoring-frontend
+    ports:
+      - "3001:3001"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    volumes:
+      # Opcional: montar logs si es necesario
+      - ./logs:/app/logs 
+    networks:
+      - scoring-network 
